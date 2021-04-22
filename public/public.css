@@ -1,0 +1,273 @@
+
+
+/* flex 弹性视窗 效果如Bootstrap的flex */
+.d-flex
+{
+    display:         flex;
+    display: -webkit-flex;
+}
+
+.d-inline-flex
+{
+    display:         inline-flex;
+    display: -webkit-inline-flex;
+}
+
+/* flex direction */
+.flex-row
+{
+    flex-direction: row;
+}
+
+.flex-row-rev
+{
+    flex-direction: row-reverse;
+}
+
+.flex-col
+{
+    flex-direction: column;
+}
+/* flex 比例 */
+.p-1
+{
+    flex: 1;
+}
+
+.p-2
+{
+    flex: 2;
+}
+
+.p-3
+{
+    flex: 3;
+}
+
+.p-4
+{
+    flex: 4;
+}
+
+.p-5
+{
+    flex: 5;
+}
+
+.p-6
+{
+    flex: 6;
+}
+
+.p-7
+{
+    flex: 7;
+}
+
+.p-8
+{
+    flex: 8;
+}
+
+.p-9
+{
+    flex: 9;
+}
+
+.p-10
+{
+    flex: 10;
+}
+
+.p-11
+{
+    flex: 11;
+}
+
+.p-12
+{
+    flex: 12;
+}
+
+.p-13
+{
+    flex: 13;
+}
+
+/* 清空样式 */
+
+html
+{
+    width: 100%;
+    height: 80%;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.span
+{
+    display: inline-block;
+}
+
+/* 响应式 font */
+
+html
+{
+    font-size: 85%;
+}
+
+@media screen and (min-width: 360px)
+{
+    html
+    {
+        font-size: 90%;
+    }
+}
+
+@media screen and (min-width: 720px)
+{
+    html
+    {
+        font-size: 95%;
+    }
+}
+
+@media screen and (min-width: 1080px)
+{
+    html
+    {
+        font-size: 100%;
+    }
+}
+
+/* flex justify-content */
+.justify-content-center
+{
+    justify-content: center;
+}
+
+.justify-content-start
+{
+    justify-content: flex-start;
+}
+
+.justify-content-end
+{
+    justify-content: flex-end;
+}
+
+.justify-content-between
+{
+    justify-content: space-between;
+}
+
+.justify-content-around
+{
+    justify-content: space-around;
+}
+
+/* flex align-content 多行有效*/
+.align-content-start
+{
+    align-content: flex-start;
+}
+
+.align-content-end
+{
+    align-content: flex-end;
+}
+
+.align-content-center
+{
+    align-content: center;
+}
+
+.align-content-around
+{
+    align-content: space-around;
+}
+
+.align-content-between
+{
+    align-content: space-between;
+}
+
+/* flex align-item */
+.align-item-center
+{
+    align-items: center;
+}
+
+.align-item-start
+{
+    align-items: flex-start;
+}
+
+.align-item-end
+{
+    align-items: flex-end;
+}
+
+.align-item-baseline
+{
+    align-items: baseline;
+}
+
+.align-item-stretch
+{
+    align-items: stretch;
+}
+
+@media screen and (max-width: 768px)
+{
+    .align-md-items-center
+    {
+        align-items: center;
+    }
+}
+
+.flex-nowrap
+{
+    flex-flow: nowrap;
+}
+
+.flex-wrap
+{
+    flex-flow: wrap;
+}
+
+/* flex 子项目 */
+
+/* flex align-self */
+.align-self-center
+{
+    align-self: center;
+}
+
+.align-self-end
+{
+    align-self: flex-end;
+}
+
+.align-self-start
+{
+    align-self: flex-start;
+}
+
+.align-self-baseline
+{
+    align-self: baseline;
+}
+
+.align-self-stretch
+{
+    align-self: stretch;
+}
