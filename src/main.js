@@ -66,13 +66,13 @@ const  router =new VueRouter({//定义一个常量来配置路由
 })
 
 //挂载路由导航守卫
-// router.beforeEach((to, from, next) => {
-//   if (to.path === '/index/login') return next();
-//   //获取token
-//   const tokenStr = window.sessionStorage.getItem("token");
-//   if (!tokenStr) return next('/index/login')
-//   next()
-// })
+router.beforeEach((to, from, next) => {
+  if (to.path === '/index/login') return next();
+  //获取token
+  const tokenStr = window.sessionStorage.getItem("token");
+  if (!tokenStr) return next('/index/login')
+  next()
+})
 axios.interceptors.request.use(config => {
   //为请求头对象，添加token验证的Authorization字段
   config.headers.token = window.sessionStorage.getItem("token");
